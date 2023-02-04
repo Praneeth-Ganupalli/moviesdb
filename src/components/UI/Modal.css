@@ -1,0 +1,31 @@
+.modal-poster
+{
+    height: "350px";
+    width: "250px" 
+}
+@media only screen and (max-width:768px) {
+    .movie-modal-content img.modal-poster
+    {
+        height: 200px;
+        width: 150px;
+        margin-left: 1.5rem !important;
+    }
+    .movie-modal-content
+    {
+        font-size: 12px;
+    }
+    .movie-modal-content span.genre-info {
+            display: block;
+            margin-left: unset !important;
+            margin-top: 0.5rem;
+    }
+    .movie-modal-content section.btn-action-wrapper
+    {
+        width: 75%;
+        margin-left: 1.4rem;
+    }
+    .movie-modal-content div.modal-movie-plot
+    {
+        max-width: 80%;
+    }
+}

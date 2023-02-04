@@ -36,3 +36,16 @@
     transform: rotate(360deg);
   }
 }
+.check-icon
+{
+    position: relative;
+    bottom: 1px;
+    margin-right: 3px;
+}
+@media only screen and (max-width:768px)
+{
+  .search-header
+  {
+    font-size: 16px;
+  }
+}

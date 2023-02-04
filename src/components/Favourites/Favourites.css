@@ -1,0 +1,51 @@
+.favs-container
+{
+    height: 250px;
+    width: 400px;
+}
+.fs-12
+{
+    font-size: 12px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space:nowrap;
+}
+.flex-b-50
+{
+    flex-basis: 50%;
+}
+.break-space
+{
+    white-space: break-spaces;
+}
+.removed{
+    transform: translateY(-100vw);
+}
+.fav-item{
+    transition: transform 1.5s 0s;
+}
+.rating-class
+{
+    font-weight: bolder;
+    font-size: 20px;
+}
+@media only screen and (max-width:768px) {
+    .fav-header{
+        margin-top: 1rem;
+        margin-left: 1.75rem !important;
+    }
+    .favs-container
+    {
+        width:95vw;
+        height: 250px;
+    }
+    .fav-genre-class
+    {
+        white-space: break-spaces;
+    }
+    .fav-filter-dropdown
+    {
+        position: relative;
+        top: 10px;
+    }
+}

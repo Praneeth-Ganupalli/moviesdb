@@ -1,0 +1,86 @@
+.bg-green__grad
+{
+
+    /* background: linear-gradient(to right, #92FE9D, #00C9FF); ?* #0CBABA */
+    box-shadow: 0 0 40px rgb(0 0 0 / 30%);
+    background: linear-gradient(to top,#2D3436 80%, transparent 100%);  
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-blend-mode: multiply;
+    z-index: 2;
+    border-radius: 10px;
+    transition: all 0.9s;
+
+}
+.bg-green__grad:hover{
+    transform: scale(1.03);
+}
+.mv-info
+{
+   justify-content: space-between;
+}
+.badge-info
+{
+    background-color: #92FE9D;
+}
+.watchlist-poster
+{
+    opacity: 0.7;
+}
+.misc-btn-info
+{
+    gap: 10px;
+    margin-top: 30px;
+}
+.like-icon,.link-icon
+{
+    position: relative;
+    bottom: 2px;
+    margin-right: 0.35rem;
+}
+.watchlist-poster
+{
+    height: 350px;
+}
+.watchlist-card
+{
+    flex-basis: 46%;
+    margin-right: 1rem;
+}
+.misc-btn-info .btn:hover
+{
+    transform: scale(1.15);
+    box-shadow: 0px 0px 80px -25px rgba(0,0,0, 0.5);
+    transition: all 0.9s;
+}
+@media only screen and (max-width:768px) {
+    .misc-btn-info
+    {
+        white-space: nowrap;
+        flex-direction: column;
+    }
+    .misc-btn-info button.btn
+    {
+        flex-basis: 50%;
+    }
+    .wtch-title
+    {
+        white-space: nowrap;
+    }
+    .poster-wtch
+    {
+        display: none;
+    }
+    .mv-info
+    {
+        justify-content: unset;
+        flex-direction: column;
+        gap: 5px;
+    }
+    .watchlist-card
+    {
+        font-size: 12px;
+        flex-basis: unset;
+    }
+}

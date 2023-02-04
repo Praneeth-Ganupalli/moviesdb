@@ -1,0 +1,32 @@
+.header-logo-text
+{
+    color: #e50914;
+    font-family: system-ui;
+    font-weight: bolder;
+    font-style: italic;
+}
+.watchlist-icon
+{
+    position: relative;
+    bottom: 1px;
+}
+.box-shadow
+{
+    box-shadow: black  0px -50px 56px -18px inset;
+}
+.custom-toggler
+{
+    display: none;
+}
+@media only screen and (max-width:768px) {
+    #navbarNav.custom-collapse {
+        margin-left: 2rem;
+        display:block !important;
+    }
+    .custom-toggler {
+            font-size: 25px;
+            position: relative;
+            bottom: 5px;
+            display: inline-block;
+    }
+}

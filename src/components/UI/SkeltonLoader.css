@@ -1,0 +1,23 @@
+.loader {
+    display: block;
+    min-height: 1em;
+    cursor: wait;
+    opacity: .5;
+    height: 275px;
+    width: 215px;
+}
+.main-container-loader
+{
+    gap: 10px;
+}
+@media only screen and (max-width:768px) {
+    .loader{
+        height: 200px;
+        width:150px;
+    }
+    .main-container-loader
+    {
+        flex-wrap: wrap;
+        gap: 30px;
+    }
+}
