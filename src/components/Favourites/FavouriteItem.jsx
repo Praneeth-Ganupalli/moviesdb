@@ -40,7 +40,7 @@ function FavouriteItem({mv}) {
        </div>
         }
         {
-         Number(mv.imdbRating) && <div className="mb-1 fs-12 text-capitalize rating-class">
+         !isNaN(Number(mv.imdbRating)) && <div className="mb-1 fs-12 text-capitalize rating-class">
           <span className={ratingClass}>{Number(mv.imdbRating)*10}% </span>
        </div>
         }
