@@ -16,13 +16,14 @@ function WatchListItem({ mv }) {
     }
   return (
     <div className="card bg-green__grad w-lg-50 mb-2  watchlist-card ms-3">
-      <div className="card-body fw-bolder text-white">
+      <img src={mv.Poster} alt="Poster" className="card-img-top mob-poster" />
+      <div className="card-body fw-bolder text-white watchlist-card-body">
         <div className="container">
           <div className="row">
             <div className="col-md-8">
               <h3 className="fw-bolder text-white">{mv.Title}</h3>
               <section className="mv-info d-flex   mt-2 ">
-                <div >{mv.Rated}</div>
+                <div>{mv.Rated}</div>
                 <div>{mv.Year}</div>
                 <div>{mv.Genre.split(",").join(" | ")}</div>
                 <div>{mv.Runtime}</div>
@@ -37,18 +38,39 @@ function WatchListItem({ mv }) {
                     target="_blank"
                     rel="noreferrer"
                   >
-                    Read More <FiExternalLink  className="link-icon"/>
+                    Read More <FiExternalLink className="link-icon" />
                   </a>
                 </div>
               </section>
               <section className="misc-btn-info d-flex ">
-                <button className="btn btn-block btn-light"><BsFillStarFill className="like-icon"/>{mv.imdbRating}</button>
-                <button className="btn btn-block disabled  btn-light"><BsFillPlayCircleFill className="like-icon" />Watch</button>
-                {!mv.isCompleted && <button className="btn btn-block  btn-light" onClick={completeWatchHandler}>Complete</button>}
-                {mv.isCompleted && <button className="btn btn-block  btn-outline-success">
-                <AiOutlineCheckCircle className='check-icon' />
-                    Completed</button>}
-                <button className="btn btn-block  btn-danger" onClick={removeItem}>Remove</button>
+                <button className="btn btn-block btn-light">
+                  <BsFillStarFill className="like-icon" />
+                  {mv.imdbRating}
+                </button>
+                <button className="btn btn-block disabled  btn-light">
+                  <BsFillPlayCircleFill className="like-icon" />
+                  Watch
+                </button>
+                {!mv.isCompleted && (
+                  <button
+                    className="btn btn-block  btn-light"
+                    onClick={completeWatchHandler}
+                  >
+                    Complete
+                  </button>
+                )}
+                {mv.isCompleted && (
+                  <button className="btn btn-block  btn-outline-success">
+                    <AiOutlineCheckCircle className="check-icon" />
+                    Completed
+                  </button>
+                )}
+                <button
+                  className="btn btn-block  btn-danger"
+                  onClick={removeItem}
+                >
+                  Remove
+                </button>
               </section>
             </div>
             <div className="col-md-4 poster-wtch">
