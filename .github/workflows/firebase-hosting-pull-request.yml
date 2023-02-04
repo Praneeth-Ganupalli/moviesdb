@@ -13,5 +13,5 @@ jobs:
       - uses: FirebaseExtended/action-hosting-deploy@v0
         with:
           repoToken: '${{ secrets.GITHUB_TOKEN }}'
-          firebaseServiceAccount: '${{ secrets.FIREBASE_SERVICE_ACCOUNT_MOVIE_FLIX_F4BCC }}'
-          projectId: movie-flix-f4bcc
+          firebaseServiceAccount: '${{ secrets.FIREBASE_SERVICE_ACCOUNT_MOVIE_FLIX_PRANEETH836 }}'
+          projectId: movie-flix-praneeth836
