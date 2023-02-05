@@ -31,7 +31,7 @@ function FavouriteItem({mv}) {
         <div className="mb-1 fs-12 text-capitalize">
           Content Type: {mv.Type}
         </div>
-        {mv.Genre && <div className="mb-1 fs-12 text-capitalize fav-genre-class">
+        {mv.Genre && <div className="mb-1 fs-12 text-capitalize fav-genre-class break-space">
           Genre: {mv.Genre}
         </div>}
         {
