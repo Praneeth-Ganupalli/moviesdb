@@ -21,7 +21,7 @@ function Movies() {
           title={searchTitle}
           showFallBack={isLoading || isError}
           fallBackContent={
-            isLoading ? <SkeletonLoader cards={4} /> : <h3 className="text-center text-white mt-4">We are soryy.Unable to fetch results for your Search.Please try again</h3>
+            isLoading ? <SkeletonLoader cards={4} /> : <h3 className="text-center text-white mt-4">We are sorry.Unable to fetch results for your Search.Please try again</h3>
           }
           moviesList={results}
         ></MoviesList>
